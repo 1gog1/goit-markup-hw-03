@@ -56,12 +56,19 @@ body {
         color: var(--current-color);
 }
 .page-header {
-        padding-top: 32px;
-        padding-bottom: 32px;
+        /* padding-top: 32px;
+        padding-bottom: 32px; */
         border-bottom: 1px solid #ECECEC;
 
     background-color: var(--main-light-color);
 }
+.link.list-header {
+        display: inline-block
+}
+.link.header-info {
+        display: inline-block
+}
+
 
 .page-navigation {
         display: flex;
@@ -138,6 +145,9 @@ li {
 .button:focus {
         background-color: var(--current-color);
         color: var(--main-light-color);
+        box-shadow: 2px 0 2px rgba(0, 0, 0, 0.12),
+         2px 0 1px rgba(0, 0, 0, 0.08),
+         1px 0 3px rgba(0, 0, 0, 0.1)
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -160,9 +170,7 @@ li {
             line-height: 1.7;
 }
 /* informatoin footer  */
-.address-list {
-        gap: 9px;
-}
+
 
 .address {
         color: rgba(255, 255, 255, 0.6);
@@ -209,7 +217,6 @@ li {
 .list-info {
         display: block;
 }
-/* footer */
 
 .footer {
     padding-top: 60px;
@@ -244,13 +251,13 @@ li {
         text-transform: uppercase;
         text-align: center;
 }
-.container.hero-box{
+.container.hero-box {
 width: 700px;
-padding-top: 200px;
-padding-bottom: 200px;
 }
 .hero-section {
-    background: var(--footer-color)
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background: var(--footer-color)
 } 
 .hero-button {
         display: block;
@@ -259,9 +266,7 @@ padding-bottom: 200px;
         min-width: 216px;
         margin-left: auto;
         margin-right: auto;
-        
-
-        
+        border: none;
         
 
         font-family: 'Roboto';
@@ -274,23 +279,30 @@ padding-bottom: 200px;
         background-color: var(--current-color);
         color: var(--main-light-color);
 }
+.features-section {
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
 .features {
         display: flex;
         gap: 30px;
-        padding-top: 94px;
-        padding-bottom: 94px;
-}
+        }
+        .features-text {
+                width: 270px;
+        }
 
-.sectoin-title {
+.section-title {
+        margin-top: 0;
+        margin-bottom: 10px;
+
         font-weight: 700;
         font-size: 14px;
         line-height: 1.1;
         color: var(--footer-color);
+        text-transform: uppercase;
 }
-.section-title {
-    text-transform: uppercase;
-    font-size: 14px;
-}
+
 .section-text {
         font-weight: 400;
         font-size: 14px;
@@ -298,6 +310,10 @@ padding-bottom: 200px;
         color: var(--secondary-color);
 }
 /* секція приклади */
+.labor-section {
+        padding-bottom: 94px;
+}
+
 .examples {
         display: flex;
         gap: 30px;
@@ -305,20 +321,20 @@ padding-bottom: 200px;
 /* секція наша команда-background-color */
 .company-box {
         display: flex;
-        padding-bottom: 94px;
         gap: 30px;
         
 }
 .our-company {
+        padding-top: 94px;
+        padding-bottom: 94px;
         background-color: var(--button-color);
 }
 
 .text-company {
         background-color: var(--main-light-color);
 }
-.container.company {
-        padding-top: 94px;
-}
+/* .container.company {
+} */
 
 .title-company {
         text-align: center;
@@ -330,6 +346,7 @@ padding-bottom: 200px;
         color: var(--main-color);
 }
 .img-title {
+        margin-top: 0;
         margin-bottom: 10px;
 
         font-weight: 500;
@@ -348,6 +365,13 @@ padding-bottom: 200px;
         text-align: center;
         padding: 30px;
 }
+.footer-link {
+margin-bottom: 9px;
+}
+.footer-link:last-child {
+        margin-bottom: 0;
+}
+
 .section {
         padding-top: 94px;
         padding-bottom: 94px;
